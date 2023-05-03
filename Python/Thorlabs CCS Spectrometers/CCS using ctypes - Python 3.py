@@ -17,7 +17,7 @@ ccs_handle=c_int(0)
 
 #Start Scan- Resource name will need to be adjusted
 #windows device manager -> NI-VISA USB Device -> Spectrometer -> Properties -> Details -> Device Instance ID
-lib.tlccs_init(b"USB0::0x1313::0x8089::M00245773::RAW", 1, 1, byref(ccs_handle))   
+lib.tlccs_init(b"USB0::0x1313::0x8081::M00267235::RAW", 1, 1, byref(ccs_handle))   
 
 #set integration time in  seconds, ranging from 1e-5 to 6e1
 integration_time=c_double(10.0e-3)
